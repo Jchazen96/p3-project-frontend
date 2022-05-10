@@ -1,5 +1,9 @@
 import './App.css';
 import { useState, useEffect } from 'react'
+import { Switch, Route } from 'react-router-dom';
+import CharacterContainer from './components/CharacterContainer';
+import NavBar from './components/NavBar';
+import HomePage from './components/HomePage';
 
 function App() {
 
@@ -32,18 +36,20 @@ function App() {
     })()
   },[])
 
-  // console.log('networks', networks)
-  // console.log('shows', shows)
-  // console.log('characters', characters)
-
-
-
-
-
 
   return (
     <div className="App">
-      <h1>T.V Shows</h1>
+
+      <NavBar />
+      <Switch>
+       <Route exact path="/">
+         <HomePage />
+       </Route>
+       <Route exact path="/characters">
+        <CharacterContainer characters={characters}/>
+       </Route>
+     </Switch>
+
     </div>
   );
 }
