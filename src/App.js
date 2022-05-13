@@ -4,7 +4,6 @@ import { Switch, Route } from 'react-router-dom';
 import CharacterContainer from './components/CharacterContainer';
 import NavBar from './components/NavBar';
 import HomePage from './components/HomePage';
-import NewCharacter from './components/NewCharacter';
 import Nickelodeon from './components/Nickelodeon';
 import CartoonNetwork from './components/CartoonNetwork';
 import ShowChars from './components/ShowChars';
@@ -67,9 +66,6 @@ function App() {
        </Route>
        <Route exact path="/characters">
         <CharacterContainer characters={characters} setCharacters={setCharacters}/>
-       </Route>
-       <Route exact path="/new-character">
-         <NewCharacter setCharacters={setCharacters}/>
        </Route>
        <Route exact path ="/nickelodeon" >
          <Nickelodeon setNetworkArr={setNetworkArr} setShows={setShows} network={network} networkArr={networkArr} selectedShow={selectedShow} setSelectedShow={setSelectedShow}/>

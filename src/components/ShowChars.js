@@ -28,9 +28,9 @@ console.log(showChars)
     return(
         <div className='char-grid'>
             {showChars.map((element)=>{
-                return( <ShowCharCard key={element.id} element={element} setShowChars={setShowChars}/>)
+                return( <ShowCharCard key={element.id} element={element} setShowChars={setShowChars} setCharacters={setCharacters}/>)
             })}
-            <div>
+            <div className='add-char'>
         <button onClick={()=>{setFormVisible(!formVisible)}}>Add a Character!</button>
         {
             formVisible ? 

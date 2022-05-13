@@ -1,16 +1,41 @@
+h1, h2, h3, h4, p {
+  font-family: cursive;
+}
+
 img {
   height: 400px;
   width: 400px;
 }
 
+.nick {
+  background-color: orange;
+}
+
 .home-img img {
-  background-color: blue;
-  
   height: 100vh;
   width: 50%;
 }
 
+
+.nav {
+  background-color: yellow;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* text-align: center; */
+}
+
+.nav-left {
+  left: 0;
+}
+
+.nav-right {
+  right: 0;
+}
+
 .char-grid {
+  padding-top: 50px;
+  justify-content: center;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -20,7 +45,8 @@ img {
 
 .Character-card {
   border: 1px solid #ccc;
-  border-radius: 10px;
+  background: linear-gradient(#E66365, #38ee1c);
+  border-radius: 10%;
   /* min-width: 23%; */
   width:30%;
   padding: 1.6%;
@@ -42,6 +68,7 @@ img {
 }
 
 .show-grid {
+  padding-top: 2%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -49,7 +76,9 @@ img {
 }
 
 .show-card {
-  border: 1px solid black;
+  border: 2px solid white;
+  border-radius: 10%;
+  background: linear-gradient(#E66465, #9198E5);
   width: 45%;
   padding: 2.4%;
   display: flex;

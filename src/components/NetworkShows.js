@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
 
-const NetworkShows = ({element, selectedShow, setSelectedShow, setShows, setNetworkArr}) => {
+const NetworkShows = ({element, setSelectedShow, setNetworkArr}) => {
 
     const {name, image, id} = element
     const [deleteBtn, setDeleteBtn] = useState(false)
