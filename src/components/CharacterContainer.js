@@ -1,12 +1,12 @@
 import CharacterCard from "./CharacterCard";
 
 
-const CharacterContainer = ( {characters} ) => {
+const CharacterContainer = ( {setCharacters, characters} ) => {
 
     return(
-        <div>
+        <div className='char-grid'>
             {characters.map((element) => {
-                return( <CharacterCard key={element.id} element={element}/>)
+                return( <CharacterCard key={element.id} element={element} setCharacters={setCharacters}/>)
             })}
         </div>
     )
